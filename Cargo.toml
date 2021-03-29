@@ -1,0 +1,14 @@
+[package]
+name = "noob"
+version = "0.1.0"
+authors = ["chris <rc.local@qq.com>"]
+edition = "2018"
+description = "a rust static library for c"
+
+[workspace]
+
+[dependencies]
+librust = { path = "librust" }
+
+#[dev-dependencies]
+#pretty_assertions = "0.7.1"

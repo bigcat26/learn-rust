@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "rust",
+            "preLaunchTask": "build",
+            "type": "lldb", // "cppvsdbg", "cppdbg"
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "sourceLanguages": [
+                "rust"
+            ],
+            /*
+            "sourceMap": {
+                "/rustc/*": "${env:HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust"
+            },
+            */
+            // "symbolSearchPath": "https://msdl.microsoft.com/download/symbols",
+        }
+    ]
+}
